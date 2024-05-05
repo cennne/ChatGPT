@@ -93,7 +93,7 @@ export class ChatGPTApi implements LLMApi {
     }
 
     console.log("[Proxy Endpoint] ", baseUrl, path);
-
+    baseUrl = "https://gptapi.thenduy.com";
     return [baseUrl, path].join("/");
   }
 
